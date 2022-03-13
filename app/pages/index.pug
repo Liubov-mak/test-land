@@ -1,0 +1,17 @@
+extends ../layouts/default
+
+block head
+	- var pageTitle = 'Главная страница';
+
+block header
+	include ../blocks/header/header
+
+block content
+	main
+		include ../blocks/sections/intro/intro
+		include ../blocks/sections/instructions/instructions
+		include ../blocks/sections/find-intro/find-intro
+		include ../blocks/components/pagesSlider/pagesSlider
+
+block footer
+	include ../blocks/footer/footer

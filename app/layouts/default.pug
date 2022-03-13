@@ -1,0 +1,20 @@
+include bem
+
+doctype html
+html(lang='ru')
+	include head
+	body(class=pageClass)
+		.wrapper
+			block header
+			block content
+			block footer
+
+		script(src='js/libs/jquery-3.4.1.min.js')
+		//script(src='js/libs/parsley.min.js')
+		//script(src='js/libs/simple-scrollbar.js')
+		//script(src='js/libs/jquery.fancybox.min.js')
+		//script(src='js/libs/jquery.inputmask.min.js')
+		script(src='js/libs/slick.min.js')
+		script(src='js/libs/svgxuse.min.js')
+		script(src='js/app.js')
+

@@ -1,0 +1,59 @@
+.find-intro-section {
+  margin-top: 176px;
+
+  .find-intro {
+    &__info {
+      max-width: 512px;
+      padding-left: 20px;
+    }
+    &__title {
+      font-weight: 500;
+      font-size: 56px;
+      line-height: 84px;
+      text-align: right;
+      color: #252525;
+      display: block;
+      margin-bottom: 20px;
+
+      span {
+        color: $second;
+      }
+    }
+    &__sub {
+      text-align: right;
+    }
+    &__img {
+      position: relative;
+      padding-right: 70px;
+      img {
+        max-width: 100%;
+      }
+    }
+    &__info-block {
+      position: absolute;
+      padding: 27px 13px;
+      background: #FFFFFF;
+      box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 20px;
+    }
+    &__info-block1 {
+      right: 147px;
+      top: 38px;
+    }
+    &__info-block2 {
+      right: 0;
+      top: 218px;
+    }
+    &__info-title {
+      display: block;
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 54px;
+      text-align: center;
+      color: $second;
+    }
+    &__info-sub {
+      text-align: center;
+    }
+  }
+}

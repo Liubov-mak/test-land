@@ -1,0 +1,351 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, header, hgroup,
+menu, nav, output, ruby, summary,
+time, mark, audio, video, article, aside, canvas,
+details, figcaption, figure, footer, header, hgroup,
+section, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+}
+section {
+  border: 0;
+  padding: 0;
+}
+
+* {
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+*:focus {
+  outline: none;
+}
+input {
+  font: initial;
+  box-shadow: none;
+}
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner {
+  border: none;
+}
+
+input[type="checkbox"]:focus {
+  -moz-outline-offset: -1px !important;
+  -moz-outline: 1px solid #000 !important;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+img {
+  max-width: 100%;
+}
+a, button,span {
+  transition: .3s all ease;
+  outline: none;
+  &:hover, &:focus, &:active {
+    outline: none;
+  }
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+  font: inherit;
+}
+
+input,
+textarea {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+}
+
+*, ::after, ::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #eee;
+}
+
+input[type="checkbox"] {
+  margin: 0;
+}
+
+input {
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+textarea {
+  resize: vertical;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+select {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+body {
+  font-family: 'Poppins';
+  max-width: 1920px;
+  margin: 0 auto;
+  background-color: #FDFDFD;
+  font-weight: normal;
+
+  &.overflow {
+    overflow: hidden;
+  }
+}
+.wrapper {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.container {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 12px;
+
+  @media screen and (min-width: 768px) {
+    padding: 0 24px;
+  }
+  @media screen and (min-width: 1056px) {
+    padding: 0 56px;
+  }
+  @media screen and (min-width: 1348px) {
+    padding: 0 122px;
+  }
+  @media screen and (min-width: 1920px) {
+    padding: 0 122px;
+  }
+}
+.bg-i {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  display: block;
+  width: 100%;
+}
+.hide {
+  display: none;
+}
+// для инпутов Сафари
+input:not([type=checkbox]):not([type=radio]),
+textarea,
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.grecaptcha-badge {
+  display: none !important;
+}
+.circle-go, .circle-preloader {
+  fill: hsla(0,0%,100%,0);
+  stroke: #67CBB3;
+  stroke-width: 8;
+}
+.preloader {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s all ease;
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  svg {
+    width: 45px;
+    height: 45px;
+    fill: transparent;
+    stroke: #ebebeb;
+  }
+}
+
+.pages--list {
+  margin-bottom: 50px;
+  a {
+    font-weight: bold;
+    color: black;
+    margin-bottom: 25px;
+  }
+}
+
+//scroll
+.scroll-wrap::-webkit-scrollbar {
+  width: 3px;
+  background-color: #ccc;
+}
+.scroll-wrap::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 2px;
+}
+.grecaptcha-badge {
+  display: none;
+}
+.main {
+  padding-top: 49px;
+
+  @media screen and (min-width: 651px) {
+    padding-top: 53px;
+  }
+  @media screen and (min-width: 1024px) {
+    padding-top: 59px;
+  }
+  @media screen and (min-width: 1056px) {
+    padding-top: 116px;
+  }
+  @media screen and (min-width: 1392px) {
+    padding-top: 136px;
+  }
+  @media screen and (min-width: 1920px) {
+    padding-top: 151px;
+  }
+}
+
+.b-show {
+  display: block;
+  animation: showBlock 0.3s linear forwards;
+}
+@keyframes showBlock {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.slow {
+  transform: translateY(-100%);
+  animation: ani 0.8s forwards;
+}
+@keyframes ani {
+  0% {transform: translateY(-100%);}
+  100% {transform: translateX(0);}
+}
+
+.slow-b {
+  transform: translateX(-100%);
+  animation: aniF 0.5s forwards;
+}
+@keyframes aniF {
+  0% {transform: translateX(-100%);}
+  100% {transform: translateY(0);}
+}
+
+
+.flex {
+  display: flex;
+}
+.inline-flex {
+  display: inline-flex;
+}
+.flex-center-vertical {
+  align-items: center;
+}
+.flex-center-horizontal {
+  justify-content: center;
+}
+.flex-space-between {
+  justify-content: space-between;
+}
+.flex-start {
+  align-items: flex-start;
+}
+.justify-start {
+  justify-content: flex-start;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.flex-end {
+  align-items: flex-end;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-column {
+  flex-direction: column;
+}
+.text-center {
+  text-align: center;
+}
+.grid {
+  display: grid;
+}

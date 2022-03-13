@@ -1,0 +1,168 @@
+.footer {
+	width: 100%;
+	background-color: $white;
+	position: relative;
+
+	.container {
+		@media screen and (min-width: 1348px) {
+			padding: 0 100px 0 125px;
+		}
+	}
+
+	.footer-holder {
+		padding-top: 142px;
+
+		&__logo {
+			width: 315px;
+			height: 68px;
+			margin-top: -15px;
+			img {
+				max-width: 100%;
+				height: 100%;
+			}
+
+		}
+		&__text {
+			font-size: 18px;
+			line-height: 27px;
+			color: #252525;
+			max-width: 312px;
+			margin-bottom: 20px;
+		}
+		&__icons {
+			width: 138px;
+		}
+		&__icon {
+			svg {
+				width: 30px;
+				height: 30px;
+				color: #252525;
+				transition: $transition;
+			}
+			&:hover {
+				svg {
+					color: $second;
+				}
+			}
+		}
+		.tw {
+			svg {
+				width: 24px;
+				height: 24px;
+			}
+		}
+		.link {
+			display: flex;
+			align-items: center;
+			flex-direction: row-reverse;
+			justify-content: flex-end;
+			margin-bottom: 28px;
+
+			svg {
+				display: flex;
+				width: 24px;
+				height: 24px;
+				margin-right: 13px;
+				color: #252525;
+				transition: $transition;
+			}
+
+			&:hover {
+				color: $second;
+				transition: $transition;
+
+				svg {
+					color: $second;
+				}
+			}
+		}
+		&__title {
+			font-weight: 500;
+			font-size: 24px;
+			line-height: 36px;
+			color: #252525;
+			margin-bottom: 20px;
+			display: block;
+		}
+		&__wrap {
+			ul li {
+				font-size: 18px;
+				line-height: 27px;
+				color: #252525;
+
+				&:hover {
+					color: $second;
+				}
+			}
+		}
+	}
+	.footer-rights {
+		font-size: 18px;
+		line-height: 27px;
+		color: $text;
+		padding-bottom: 28px;
+		text-align: center;
+		margin-top: 94px;
+	}
+}
+.empty-block {
+	height: 56px;
+	width: 100%;
+}
+.mobile-up {
+	z-index: 400;
+	cursor: pointer;
+	opacity: 0;
+	border-radius: 50%;
+	background: $second;
+	right: 14px;
+	color: $white;
+	width: 32px;
+	height: 32px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	bottom: 44px;
+	position: fixed;
+	transition: opacity 0.6s linear;
+
+	@media screen and (min-width: 768px) {
+		bottom: 90px;
+		right: 30px;
+		width: 62px;
+		height: 62px;
+	}
+
+	svg {
+		width: 21px;
+		height: 10px;
+		color: $white;
+		display: flex;
+		transform: rotate(-90deg);
+		@media screen and (min-width: 768px) {
+			width: 26px;
+			height: 22px;
+		}
+	}
+
+	&.active {
+		color: $white;
+		background: $active;
+	}
+	&:active {
+		transition: $transition;
+		background: $active;
+	}
+	&:hover {
+		color: $white;
+		background: $hover;
+		transition: $transition;
+
+		svg {
+			color: $white;
+		}
+	}
+}
+.mobile-up.is-visible {
+	opacity: 1;
+}

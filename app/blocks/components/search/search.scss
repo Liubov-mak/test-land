@@ -1,0 +1,123 @@
+.search-form {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  height: 76px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 50;
+  width: 100%;
+  max-width: 420px;
+
+  .search__input {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #9D9D9D;
+    font-family: 'Poppins';
+  }
+
+  &.active {
+    @media screen and (min-width: 1056px) {
+      margin-left: 133px;
+    }
+    @media screen and (min-width: 1392px) {
+
+    }
+    @media screen and (min-width: 1920px) {
+      margin-left: 206px;
+    }
+  }
+
+  .search-input-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $second;
+    position: relative;
+    z-index: 1;
+
+    img {
+      width: 25px;
+      height: 25px;
+    }
+  }
+  .search-holder {
+    height: 100%;
+    padding: 9px 12px;
+
+    @media screen and (min-width: 1056px) {
+      padding: 9px 16px;
+    }
+    @media screen and (min-width: 1392px) {
+      padding: 12px 16px;
+    }
+    @media screen and (min-width: 1920px) {
+      padding: 15px 16px;
+    }
+  }
+  .search-result-header {
+    opacity: 0;
+    visibility: hidden;
+    &.active {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  .search-result {
+    position: absolute;
+    padding: 35px 8px 9px 8px;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 8px;
+    z-index: -1;
+    width: calc(100% + 2px);
+    height: auto;
+    top: -1px;
+    left: -1px;
+    transition: $transition;
+    @media screen and (min-width: 672px) {
+      padding: 42px 8px 9px 8px;
+    }
+
+    @media screen and (min-width: 1056px) {
+      padding: 35px 12px 4px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+     // border: 1px solid #9D9D9D;
+      height: auto;
+    }
+
+    @media screen and (min-width: 1392px) {
+      padding: 76px 16px 8px;
+    }
+    &__list-header {
+      li a {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        color: #9D9D9D;
+        padding: 8px 0;
+        width: 100%;
+      }
+    }
+  }
+  .search-result-close {
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: $transition;
+    right: 86px;
+
+    &.active {
+      opacity: 1;
+      right: 86px;
+    }
+    svg {
+      color: #9D9D9D;
+      width: 15px;
+      height: 15px;
+    }
+  }
+}

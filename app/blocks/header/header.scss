@@ -1,0 +1,42 @@
+.header {
+  background: #F2FAFA;
+  padding: 51px 0;
+  .container {
+    @media screen and (min-width: 1348px) {
+      padding: 0 109px 0 108px;
+    }
+  }
+  .btn {
+    margin-left: 60px;
+  }
+  &__logo {
+    width: 238px;
+    height: 52px;
+    img {
+      max-width: 100%;
+    }
+  }
+  &__top {
+    padding: 15px 25px 15px 20px;
+    height: 82px;
+    background: #FFFFFF;
+    border-radius: 50px;
+  }
+  &__nav {
+    li {
+      font-size: 20px;
+      line-height: 30px;
+      color: #252525;
+      opacity: 0.7;
+      margin-right: 35px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+      &:hover {
+        text-shadow: 0 0 .35px #1E88E5, 0 0 .35px #1E88E5;
+        color: $second;
+      }
+    }
+  }
+}

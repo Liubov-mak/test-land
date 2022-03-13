@@ -1,0 +1,71 @@
+.btn-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  display: flex;
+  padding: 11px 43px;
+  background: $second;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #FFFFFF;
+  white-space: nowrap;
+  transition: $transition;
+  cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    &:hover {
+      background: $hover;
+      box-shadow: none;
+    }
+    &:active,
+    &.active {
+      background: $active;
+    }
+  }
+  @media screen and (min-width: 1348px) {
+    height: 52px;
+  }
+
+  &.secondary {
+    padding: 20px 24px;
+    height: 35px;
+    background: $second;
+    border-radius: 10px;
+    @media screen and (min-width: 768px) {
+      &:hover {
+        background: $hover;
+        box-shadow: none;
+      }
+      &:active,
+      &.active {
+        background: $active;
+      }
+    }
+    @media screen and (min-width: 1348px) {
+      height: 76px;
+    }
+  }
+
+  &.default {
+    cursor: not-allowed;
+  }
+}
+
+.text {
+  font-size: 18px;
+  line-height: 1.5;
+  color: $text;
+
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+  }
+}

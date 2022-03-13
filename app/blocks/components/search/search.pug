@@ -1,0 +1,23 @@
+.search-form
+    .search-holder.flex.flex-center-vertical.flex-space-between
+        form.search
+            input(name='search' type="text" id="search" onkeyup="doSearchResult();" placeholder="search freelance work" autocomplete='on').search__input
+            .search-result.search-result-header
+                ul.search-result__list.search-result__list-header
+                    li
+                        a(href='') search freelance work
+                    li
+                        a(href='') search freelance work
+                    li
+                        a(href='') search freelance work
+                    li
+                        a(href='') search freelance work
+                    li
+                        a(href='') search freelance work
+                    li
+                        a(href='') search freelance work
+        button.search-input-btn
+            img(src='images/search.png' alt='search-img')
+        .search-result-close.search-result-close-header
+            svg
+                use(xlink:href="images/sprites.svg#close")
